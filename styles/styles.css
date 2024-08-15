@@ -2,14 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     color: white;
     font-family: "Inter", sans-serif;
 
 }
-body{
+
+body {
     background-color: black;
     width: 70vw;
     margin: 0 auto;
@@ -19,53 +20,59 @@ body{
 /* Navbar  */
 
 
-nav{
+nav {
 
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav>h2>i{
+
+nav>h2>i {
     color: rgba(230, 83, 60, 1);
 }
-nav > ul{
+
+nav>ul {
     display: flex;
     /* background-color: aqua; */
     border: 0.5px solid gray;
     width: 370px;
     justify-content: space-around;
     border-radius: 20px;
-    
+
 }
 
-nav>ul li{
-    list-style: none;  
+nav>ul li {
+    list-style: none;
     margin: 10px;
     /* background-color: aqua;  */
 }
-li a{
+
+li a {
     text-decoration: none;
 }
 
 /* hero */
-.hero-info-holder{
+.hero-info-holder {
     width: 500px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.hero{
+
+.hero {
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.hero-tittle{
+
+.hero-tittle {
     font-weight: 600;
     font-size: 80px;
 }
-.hero-tittle >span{
+
+.hero-tittle>span {
     font-family: "Grey Qo", cursive;
 }
 
@@ -83,19 +90,21 @@ li a{
     gap: 80px;
 }
 
-.sample-img-holder{
+.sample-img-holder {
     display: flex;
 }
-.sample-img-holder p{
+
+.sample-img-holder p {
     margin-bottom: 5px;
 }
 
-.part-2 img{
+.part-2 img {
     border-radius: 50%;
     border: 3px solid rgb(63, 63, 63);
     margin-bottom: 10px;
 }
-.info-holder{
+
+.info-holder {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -103,7 +112,7 @@ li a{
 
 /* run extra section  */
 
-.run-extra{
+.run-extra {
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
@@ -113,13 +122,13 @@ li a{
     align-items: center;
 }
 
-.run-extra img{
+.run-extra img {
     width: 400px;
     /* height: 300px; */
     border-radius: 20px;
 }
 
-.run-info{
+.run-info {
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -130,14 +139,14 @@ li a{
 /* bmi info  */
 
 
-.bmi-calculator{
+.bmi-calculator {
     margin-top: 100px;
     display: flex;
     justify-content: center;
 }
 
 
-.bmi-box{
+.bmi-box {
     margin-top: 100px;
     background-color: rgba(34, 34, 34, 1);
     width: 100vw;
@@ -146,12 +155,13 @@ li a{
     display: flex;
     padding-top: 60px;
 }
-.bmi-box-holder{
+
+.bmi-box-holder {
     display: flex;
     justify-content: space-around;
 }
 
-.bmi-container{
+.bmi-container {
     /* background-color: red; */
     width: 50vw;
     display: flex;
@@ -165,28 +175,31 @@ table {
     text-align: left;
 }
 
-td ,th{
-    border: 1px solid  rgb(68, 68, 68);
+td,
+th {
+    border: 1px solid rgb(68, 68, 68);
     padding: 10px;
 }
 
 
 
 /* form */
-.bmi-form{
+.bmi-form {
     width: 600px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     /* background-color: aqua; */
 }
-.bmi-box-form{
+
+.bmi-box-form {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
     padding: 12px 40px 12px 20px;
     margin: 5px;
 }
-.bmi-box-form-1{
+
+.bmi-box-form-1 {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
     padding: 12px 40px 12px 20px;
@@ -195,7 +208,7 @@ td ,th{
 
 /* meet our team  */
 
-.part-3{
+.part-3 {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -205,66 +218,122 @@ td ,th{
 
 }
 
-.profile-holder{
+.profile-holder {
     display: grid;
     width: 50vw;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     background-color: rgba(34, 34, 34, 1);
-    gap: 5px;
+    gap: 10px;
     border-radius: 20px;
     padding: 20px;
 
 }
-.profile{
+
+.profile {
     position: relative;
     /* background-color: aqua; */
     border-radius: 15px;
     text-align: left;
 }
 
-.profile img{
+.profile img {
 
     height: 220px;
     width: 260px;
     border-radius: 15px;
 
 }
-.trainer-info{
-    position:absolute;
+
+.trainer-info {
+    position: absolute;
     bottom: 20px;
     left: 10px;
+}
+
+/* footer  */
+
+footer {
+    margin-top: 100px;
+    background-color: rgba(34, 34, 34, 1);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    height: 40vh;
+    padding-top: 60px;
+    position: relative;
+    
+
+
+}
+
+.footer-section {
+    /* background-color: aqua; */
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    gap: 40px;
+    margin: auto;
+    align-items: center;
+}
+.rights{
+    text-align: center;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+hr{
+    margin: auto;
+    width: 60vw;
+}
+.right-holder{
+    /* text-align: center; */
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-info-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 
 /* Extra modules */
 
-.btn-primary{
+.btn-primary {
     padding: 10px 50px;
     border: 1px solid gray;
     border-radius: 20px;
-    font-size:15px;
+    font-size: 15px;
 }
 
-.gray-info{
+.gray-info {
     color: gray;
 }
 
-.sub-tittle{
+.sub-tittle {
     font-weight: 800;
     font-size: 40px;
 }
 
-.no-border-btn{
+.no-border-btn {
     border: none;
-   background-color:  rgba(230, 83, 60, 1);
+    background-color: rgba(230, 83, 60, 1);
 
 }
 
-.font-medium{
+.font-medium {
     font-size: 25px;
 }
-.orange{
+
+.orange {
     margin-top: 10px;
-   background-color:  rgba(230, 83, 60, 1);
-   border: none;
+    background-color: rgba(230, 83, 60, 1);
+    border: none;
+}
+
+.text-orange {
+    color:  rgba(230, 83, 60, 1);
 }
