@@ -15,6 +15,19 @@ body {
     width: 70vw;
     margin: 0 auto;
 
+
+}
+body {
+    background-color: black;
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+img{
+    object-fit: cover;
 }
 
 /* Navbar  */
@@ -91,7 +104,8 @@ li a {
 }
 
 .sample-img-holder {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 
 .sample-img-holder p {
@@ -336,4 +350,53 @@ hr{
 
 .text-orange {
     color:  rgba(230, 83, 60, 1);
+}
+
+.hide{
+    display: none;
+} 
+
+/* media query  */
+@media screen and (min-width: 576px)  and (max-width: 768px) {
+    
+    .hero {
+        flex-direction: column;
+        margin-top: 100px;
+        gap: 50px;
+    }
+
+    .sample-img-holder {
+        
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    body{
+        width: 80vw;
+    }
+
+    .run-extra img {
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+    }
+    .run-info {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bmi-box-holder {
+        display: grid;
+        grid-template-rows: auto;
+        gap: 20px;
+        /* flex-direction: column; */
+    }
+
+    .bmi-box {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
 }
