@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Inter", sans-serif;
+
+}
+body{
+    background-color: black;
+    width: 70vw;
+    margin: 0 auto;
+
+}
+
+/* Navbar  */
+
+
+nav{
+
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>h2>i{
+    color: rgba(230, 83, 60, 1);
+}
+nav > ul{
+    display: flex;
+    /* background-color: aqua; */
+    border: 0.5px solid gray;
+    width: 370px;
+    justify-content: space-around;
+    border-radius: 20px;
+    
+}
+
+nav>ul li{
+    list-style: none;  
+    margin: 10px;
+    /* background-color: aqua;  */
+}
+li a{
+    text-decoration: none;
+}
+
+/* hero */
+.hero-info-holder{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hero{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-tittle{
+    font-weight: 600;
+    font-size: 80px;
+}
+.hero-tittle >span{
+    font-family: "Grey Qo", cursive;
+}
+
+
+
+
+/* part 2 */
+
+.part-2{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+}
+
+.sample-img-holder{
+    display: flex;
+}
+.sample-img-holder p{
+    margin-bottom: 5px;
+}
+
+.part-2 img{
+    border-radius: 50%;
+    border: 3px solid rgb(63, 63, 63);
+    margin-bottom: 10px;
+}
+.info-holder{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* run extra section  */
+
+.run-extra{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 20px;
+    padding: 40px;
+    align-items: center;
+}
+
+.run-extra img{
+    width: 400px;
+    /* height: 300px; */
+    border-radius: 20px;
+}
+
+.run-info{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* bmi info  */
+
+
+.bmi-calculator{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.bmi-box{
+    margin-top: 100px;
+    background-color: rgba(34, 34, 34, 1);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    height: 40vh;
+    display: flex;
+    padding-top: 60px;
+}
+.bmi-box-holder{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bmi-container{
+    /* background-color: red; */
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 40px;
+    border: 1px solid black;
+}
+
+td ,th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+
+/* form */
+.bmi-form{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: aqua; */
+}
+.bmi-box-form{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    margin: 5px;
+}
+.bmi-box-form-1{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    margin: 5px;
+}
+
+/* Extra modules */
+
+.btn-primary{
+    padding: 10px 50px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    font-size:15px;
+}
+
+.gray-info{
+    color: gray;
+}
+
+.sub-tittle{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.no-border-btn{
+    border: none;
+}
+
+
+
+
