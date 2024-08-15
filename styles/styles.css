@@ -14,17 +14,8 @@ body {
     background-color: black;
     width: 70vw;
     margin: 0 auto;
-
-
 }
-body {
-    background-color: black;
-    width: 70vw;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-}
+
 
 img{
     object-fit: cover;
@@ -49,22 +40,28 @@ nav>ul {
     display: flex;
     /* background-color: aqua; */
     border: 0.5px solid gray;
-    width: 370px;
+    width: 450px;
     justify-content: space-around;
-    border-radius: 20px;
+    border-radius: 30px;
 
 }
 
 nav>ul li {
+    /* display: inline; */
     list-style: none;
     margin: 10px;
     /* background-color: aqua;  */
 }
 
-li a {
+nav ul li a {
     text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    /* background-color: rgb(168, 168, 168); */
 }
-
+nav ul li a:hover{
+    background-color: rgba(230, 83, 60, 1);
+}
 /* hero */
 .hero-info-holder {
     width: 500px;
@@ -137,8 +134,8 @@ li a {
 }
 
 .run-extra img {
-    width: 400px;
-    /* height: 300px; */
+    width: 50%;
+    height: 300px;
     border-radius: 20px;
 }
 
@@ -146,12 +143,38 @@ li a {
     width: 400px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
 
 /* bmi info  */
 
+.bmi-box {
+
+    
+    position: relative;
+    margin-top: 100px;
+    background-color: rgba(34, 34, 34, 1);
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 50vh;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 60px;
+}
+
+.bmi-box-holder {
+    /* background-color: #a55454; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
 
 .bmi-calculator {
     margin-top: 100px;
@@ -160,26 +183,13 @@ li a {
 }
 
 
-.bmi-box {
-    margin-top: 100px;
-    background-color: rgba(34, 34, 34, 1);
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    height: 50vh;
-    display: flex;
-    padding-top: 60px;
-}
-
-.bmi-box-holder {
-    display: flex;
-    justify-content: space-around;
-}
-
 .bmi-container {
     /* background-color: red; */
     width: 50vw;
     display: flex;
     justify-content: center;
+    
+    
 }
 
 table {
@@ -234,7 +244,7 @@ th {
 
 .profile-holder {
     display: grid;
-    width: 50vw;
+    width: 60vw;
     grid-template-columns: repeat(3, 1fr);
     background-color: rgba(34, 34, 34, 1);
     gap: 10px;
@@ -253,7 +263,7 @@ th {
 .profile img {
 
     height: 220px;
-    width: 260px;
+    width: 100%;
     border-radius: 15px;
 
 }
@@ -271,12 +281,9 @@ footer {
     background-color: rgba(34, 34, 34, 1);
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-    height: 40vh;
+    height: 50vh;
     padding-top: 60px;
     position: relative;
-    
-
-
 }
 
 .footer-section {
@@ -386,17 +393,105 @@ hr{
         gap: 10px;
     }
 
+    .bmi-container{
+        margin-right: auto;
+
+    }
     .bmi-box-holder {
-        display: grid;
-        grid-template-rows: auto;
-        gap: 20px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        width: 90vw;
+        margin: 0 auto;
+        /* background-color: aqua; */
         /* flex-direction: column; */
     }
 
     .bmi-box {
-        height: auto;
+        height: 90vh;
+        display: flex;
+    }
+
+
+    .profile-holder {
+        width: 80vw;
+    
+    }
+
+
+    footer{
+        height: 70vh;
+    }
+    .footer-section {
+        /* background-color: aqua; */
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+    .footer-logo{
+        grid-column: span 2;
+    }
+}
+
+@media screen and (min-width: 576px)  and (max-width: 768px) {
+    
+    .hero {
+        flex-direction: column;
+        margin-top: 100px;
+        gap: 50px;
+    }
+
+    .sample-img-holder {
+        
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    body{
+        width: 80vw;
+    }
+
+    .run-extra img {
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+    }
+    .run-info {
+        width: 300px;
         display: flex;
         flex-direction: column;
+        gap: 10px;
+    }
 
+    .bmi-container{
+        margin-right: auto;
+
+    }
+    .bmi-box-holder {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        width: 90vw;
+        margin: 0 auto;
+        /* background-color: aqua; */
+        /* flex-direction: column; */
+    }
+
+    .bmi-box {
+        height: 90vh;
+        display: flex;
+    }
+
+
+    .profile-holder {
+        width: 80vw;
+    
+    }
+
+
+    footer{
+        height: 70vh;
+    }
+    .footer-section {
+        /* background-color: aqua; */
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+    .footer-logo{
+        grid-column: span 2;
     }
 }
