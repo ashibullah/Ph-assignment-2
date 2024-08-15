@@ -74,7 +74,7 @@ li a{
 
 /* part 2 */
 
-.part-2{
+.part-2 {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -142,7 +142,7 @@ li a{
     background-color: rgba(34, 34, 34, 1);
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-    height: 40vh;
+    height: 50vh;
     display: flex;
     padding-top: 60px;
 }
@@ -161,11 +161,12 @@ li a{
 table {
     border-collapse: collapse;
     margin-top: 40px;
-    border: 1px solid black;
+    border: 1px solid rgb(68, 68, 68);
+    text-align: left;
 }
 
 td ,th{
-    border: 1px solid black;
+    border: 1px solid  rgb(68, 68, 68);
     padding: 10px;
 }
 
@@ -192,6 +193,49 @@ td ,th{
     margin: 5px;
 }
 
+/* meet our team  */
+
+.part-3{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+
+}
+
+.profile-holder{
+    display: grid;
+    width: 50vw;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgba(34, 34, 34, 1);
+    gap: 5px;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+.profile{
+    position: relative;
+    /* background-color: aqua; */
+    border-radius: 15px;
+    text-align: left;
+}
+
+.profile img{
+
+    height: 220px;
+    width: 260px;
+    border-radius: 15px;
+
+}
+.trainer-info{
+    position:absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+
 /* Extra modules */
 
 .btn-primary{
@@ -212,8 +256,15 @@ td ,th{
 
 .no-border-btn{
     border: none;
+   background-color:  rgba(230, 83, 60, 1);
+
 }
 
-
-
-
+.font-medium{
+    font-size: 25px;
+}
+.orange{
+    margin-top: 10px;
+   background-color:  rgba(230, 83, 60, 1);
+   border: none;
+}
